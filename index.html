@@ -39,9 +39,33 @@
         </div>
       </div>
     </div>
+
+    <div class="container" id="chatRoomPrivate" style="display: none;">
+      <div class="row p-2">
+          <div class="text-center col-3">
+              <h3><span class="badge bg-success">Chat With</span></h3>
+              <ol class="list-group list-group-numbered text-center" id="usersListPrivate">
+                  
+              </ol>
+          </div>
+          <div class="col-9 card bg-body-tertiary privet-chat" id="chatPrivate">
+              <div class="card-body screen">
+                  <h3 class="text-center text-bg-success mb-3">private Chat</h3>
+                  <div class="">
+                      <div id="chatDisplayPrivate" class="chatDisplay"></div>
+                  </div>
+              </div>
+              <div class="input-group mt-5 mb-3 p-2">
+                  <input type="text" class="form-control p-2" placeholder="Type Message" aria-label="Recipient's username" aria-describedby="button-addon2" id="messagePrivate">
+                  <button class="btn btn-outline-primary p-2" type="button" id="sendMsgBtnPrivate">Send</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
     <script src="./bootstrap-5.3.1-dist/js/bootstrap.js"></script>
     <script src="./node_modules//socket.io/client-dist/socket.io.min.js"></script>
-    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <!-- <script src="./node_modules/socket.io/client-dist/socket.io.min.js"></script> -->
     <script src="./JS/index.js"></script>
   </body>
 </html>

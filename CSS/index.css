@@ -3,7 +3,8 @@ body {
     overflow: hidden;
 }
 
-#usersList {
+#usersList,
+#userList {
     max-height: 50%;
     overflow-y: scroll;
 }
@@ -13,7 +14,8 @@ body {
     overflow-y: scroll;
 } */
 
-#chatDisplay {
+#chatDisplay,
+#chatDisplayPrivate {
     height: 300px;
     overflow-y: scroll;
 }
