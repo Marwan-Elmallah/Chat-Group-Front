@@ -7,7 +7,7 @@ const sendMsgBtn = document.getElementById("sendMsgBtn")
 const message = document.getElementById("message")
 const chatDisplay = document.getElementById("chatDisplay")
 
-const clientIO = io("http://localhost:5000")
+const clientIO = io("https://chat-group-aqmx.onrender.com")
 
 clientIO.emit("connection")
 
