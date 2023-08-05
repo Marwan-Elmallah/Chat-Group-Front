@@ -20,11 +20,11 @@ body {
     overflow-y: scroll;
 }
 
+ol li:hover {
+    cursor: pointer;
+}
+
 /* #chatRoom {
     min-height: 50%;
     overflow-y: scroll;
 } */
-
-ol li:hover {
-    cursor: pointer;
-}
