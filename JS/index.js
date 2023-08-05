@@ -26,7 +26,8 @@ let allChat = () => {
                 </div>
             `
         })
-        // console.log(msg, userMsg);
+
+        // console.log(msg);
     })
 }
 
@@ -100,6 +101,7 @@ const chatPrivate = () => {
                 </div>
             `
         })
+        chatDisplayPrivate.scrollTo(0, chatDisplayPrivate.scrollHeight)
         // console.log(msg);
     })
 }
