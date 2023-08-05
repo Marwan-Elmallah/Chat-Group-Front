@@ -7,6 +7,12 @@ const sendMsgBtn = document.getElementById("sendMsgBtn")
 const message = document.getElementById("message")
 const chatDisplay = document.getElementById("chatDisplay")
 
+const { Server } = require("socket.io");
+
+const io = new Server({
+    serveClient: false
+});
+
 const clientIO = io("https://chat-group-aqmx.onrender.com")
 
 clientIO.emit("connection")
