@@ -24,3 +24,7 @@ body {
     min-height: 50%;
     overflow-y: scroll;
 } */
+
+ol li:hover {
+    cursor: pointer;
+}
