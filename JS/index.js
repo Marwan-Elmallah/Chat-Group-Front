@@ -26,7 +26,7 @@ let allChat = () => {
                 </div>
             `
         })
-
+        chatDisplay.scrollTo(0, chatDisplayPrivate.scrollHeight)
         // console.log(msg);
     })
 }
