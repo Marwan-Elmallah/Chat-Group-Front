@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Group Chat</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./CSS/index.css">
+  </head>
+  <body>
+    <!-- main Login -->
+    <div class="container mt-5 p-5 w-50" id="mainLogin">
+      <div class="input-group mb-3">
+        <span class="input-group-text bg-primary text-light" id="basic-addon1">Login Name</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="loginName">
+        <button class="btn btn-outline-primary" type="button" id="loginBtn">Join Chat</button>
+      </div>
+      </div>
+    </div>
+    <!-- Chat Room -->
+    <div class="container" id="chatRoom" style="display: none;">
+      <div class="row p-2">
+        <div class="text-center col-3">
+          <h3><span class="badge bg-success">Online</span></h3>
+          <ol class="list-group list-group-numbered text-center" id="usersList">
+            
+          </ol>
+        </div>
+        <div class="col-9 card bg-body-tertiary chat" id="chat">
+          <div class="card-body screen">
+            <h3 class="text-center text-bg-success mb-3">Group Chat</h3>
+            <div class="">
+              <div id="chatDisplay" class="chatDisplay"></div>
+            </div>
+          </div>
+          <div class="input-group mt-5 mb-3 p-2">
+            <input type="text" class="form-control p-2" placeholder="Type Message" aria-label="Recipient's username" aria-describedby="button-addon2" id="message">
+            <button class="btn btn-outline-primary p-2" type="button" id="sendMsgBtn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <script src="./node_modules//socket.io/client-dist/socket.io.min.js"></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
