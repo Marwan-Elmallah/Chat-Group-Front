@@ -3,6 +3,8 @@
   <head>
     <title>Group Chat</title>
     <meta charset="utf-8" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()" />
     <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="./CSS/index.css">
   </head>
@@ -64,7 +66,8 @@
   </div>
 
     <script src="./bootstrap-5.3.1-dist/js/bootstrap.js"></script>
-    <script src="./node_modules//socket.io/client-dist/socket.io.min.js"></script>
+    <!-- <script src="./node_modules//socket.io/client-dist/socket.io.min.js"></script> -->
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
     <!-- <script src="./node_modules/socket.io/client-dist/socket.io.min.js"></script> -->
     <script src="./JS/index.js"></script>
   </body>
